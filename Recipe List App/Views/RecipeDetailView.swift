@@ -17,12 +17,17 @@ struct RecipeDetailView: View {
         ScrollView {
             
             VStack (alignment: .leading){
+                
                 // MARK: Recipe Image
                 Image(recipe.image)
                     .resizable()
                     .scaledToFit()
                 
-                Divider()
+                Text(recipe.name)
+                    .bold()
+                    .font(.largeTitle)
+                    .foregroundColor(Color.init(.label))
+                    .padding([.leading, .top])
                 
                 // MARK: Serving Size Picker
                 
@@ -71,7 +76,6 @@ struct RecipeDetailView: View {
                 // MARK: Directions
             }
         }
-        .navigationBarTitle(recipe.name)
     }
 }
 
