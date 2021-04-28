@@ -35,13 +35,11 @@ struct RecipeListView: View {
                                             .frame(width: 50, height: 50)
                                             .clipped()
                                             .cornerRadius(5)
-                                            .shadow(radius: 3)
+                                            .shadow(color: Color.init(.label), radius: 3)
                                         Text(recipe.name)
-                                            .foregroundColor(.black)
-                                        
+                                            .foregroundColor(Color.init(.label))
                                     }
                                 }
-                                
                             )
                         }
                     }
@@ -56,6 +54,7 @@ struct RecipeListView: View {
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeListView()
+            .preferredColorScheme(.dark)
             .environmentObject(RecipeModel())
     }
 }
