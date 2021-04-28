@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00CD6F412637C078001176E8 /* Recipe_List_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD6F402637C078001176E8 /* Recipe_List_App.swift */; };
+		00CD6F412637C078001176E8 /* Recipe_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD6F402637C078001176E8 /* Recipe_App.swift */; };
 		00CD6F432637C078001176E8 /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD6F422637C078001176E8 /* RecipeListView.swift */; };
 		00CD6F452637C07B001176E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD6F442637C07B001176E8 /* Assets.xcassets */; };
 		00CD6F482637C07B001176E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CD6F472637C07B001176E8 /* Preview Assets.xcassets */; };
@@ -19,11 +19,12 @@
 		00CD6F6F26380ED0001176E8 /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 00CD6F6E26380ED0001176E8 /* recipes.json */; };
 		00CD6F7326381345001176E8 /* RecipeFeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CD6F7226381345001176E8 /* RecipeFeaturedView.swift */; };
 		00D2247D263946C00013D5BE /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D2247C263946C00013D5BE /* Rational.swift */; };
+		00E81A9326395F3D00B82F77 /* RecipeHighlights.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E81A9226395F3D00B82F77 /* RecipeHighlights.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00CD6F3D2637C078001176E8 /* Recipe List App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe List App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		00CD6F402637C078001176E8 /* Recipe_List_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_List_App.swift; sourceTree = "<group>"; };
+		00CD6F3D2637C078001176E8 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00CD6F402637C078001176E8 /* Recipe_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe_App.swift; sourceTree = "<group>"; };
 		00CD6F422637C078001176E8 /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
 		00CD6F442637C07B001176E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CD6F472637C07B001176E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -36,6 +37,7 @@
 		00CD6F6E26380ED0001176E8 /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = recipes.json; path = ../../../../../Downloads/recipes.json; sourceTree = "<group>"; };
 		00CD6F7226381345001176E8 /* RecipeFeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeaturedView.swift; sourceTree = "<group>"; };
 		00D2247C263946C00013D5BE /* Rational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
+		00E81A9226395F3D00B82F77 /* RecipeHighlights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeHighlights.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 		00CD6F342637C078001176E8 = {
 			isa = PBXGroup;
 			children = (
-				00CD6F3F2637C078001176E8 /* Recipe List App */,
+				00CD6F3F2637C078001176E8 /* Recipe App */,
 				00CD6F3E2637C078001176E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,15 +62,15 @@
 		00CD6F3E2637C078001176E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00CD6F3D2637C078001176E8 /* Recipe List App.app */,
+				00CD6F3D2637C078001176E8 /* Recipe App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00CD6F3F2637C078001176E8 /* Recipe List App */ = {
+		00CD6F3F2637C078001176E8 /* Recipe App */ = {
 			isa = PBXGroup;
 			children = (
-				00CD6F402637C078001176E8 /* Recipe_List_App.swift */,
+				00CD6F402637C078001176E8 /* Recipe_App.swift */,
 				00CD6F512637C0C3001176E8 /* Views */,
 				00CD6F522637C0C9001176E8 /* ViewModels */,
 				00CD6F532637C0CF001176E8 /* Models */,
@@ -79,7 +81,7 @@
 				00CD6F492637C07B001176E8 /* Info.plist */,
 				00CD6F462637C07B001176E8 /* Preview Content */,
 			);
-			path = "Recipe List App";
+			path = "Recipe App";
 			sourceTree = "<group>";
 		};
 		00CD6F462637C07B001176E8 /* Preview Content */ = {
@@ -97,6 +99,7 @@
 				00CD6F672637D1C8001176E8 /* RecipeDetailView.swift */,
 				00CD6F6B2637F8A4001176E8 /* RecipeTabView.swift */,
 				00CD6F7226381345001176E8 /* RecipeFeaturedView.swift */,
+				00E81A9226395F3D00B82F77 /* RecipeHighlights.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,9 +147,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00CD6F3C2637C078001176E8 /* Recipe List App */ = {
+		00CD6F3C2637C078001176E8 /* Recipe App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00CD6F4C2637C07B001176E8 /* Build configuration list for PBXNativeTarget "Recipe List App" */;
+			buildConfigurationList = 00CD6F4C2637C07B001176E8 /* Build configuration list for PBXNativeTarget "Recipe App" */;
 			buildPhases = (
 				00CD6F392637C078001176E8 /* Sources */,
 				00CD6F3A2637C078001176E8 /* Frameworks */,
@@ -156,9 +159,9 @@
 			);
 			dependencies = (
 			);
-			name = "Recipe List App";
+			name = "Recipe App";
 			productName = "Recipe List App";
-			productReference = 00CD6F3D2637C078001176E8 /* Recipe List App.app */;
+			productReference = 00CD6F3D2637C078001176E8 /* Recipe App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 00CD6F382637C078001176E8 /* Build configuration list for PBXProject "Recipe List App" */;
+			buildConfigurationList = 00CD6F382637C078001176E8 /* Build configuration list for PBXProject "Recipe App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -188,7 +191,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00CD6F3C2637C078001176E8 /* Recipe List App */,
+				00CD6F3C2637C078001176E8 /* Recipe App */,
 			);
 		};
 /* End PBXProject section */
@@ -213,10 +216,11 @@
 			files = (
 				00CD6F5D2637C2B4001176E8 /* Recipe.swift in Sources */,
 				00CD6F682637D1C8001176E8 /* RecipeDetailView.swift in Sources */,
+				00E81A9326395F3D00B82F77 /* RecipeHighlights.swift in Sources */,
 				00D2247D263946C00013D5BE /* Rational.swift in Sources */,
 				00CD6F612637C3B4001176E8 /* RecipeModel.swift in Sources */,
 				00CD6F432637C078001176E8 /* RecipeListView.swift in Sources */,
-				00CD6F412637C078001176E8 /* Recipe_List_App.swift in Sources */,
+				00CD6F412637C078001176E8 /* Recipe_App.swift in Sources */,
 				00CD6F652637C54E001176E8 /* DataService.swift in Sources */,
 				00CD6F7326381345001176E8 /* RecipeFeaturedView.swift in Sources */,
 				00CD6F6C2637F8A4001176E8 /* RecipeTabView.swift in Sources */,
@@ -389,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00CD6F382637C078001176E8 /* Build configuration list for PBXProject "Recipe List App" */ = {
+		00CD6F382637C078001176E8 /* Build configuration list for PBXProject "Recipe App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00CD6F4A2637C07B001176E8 /* Debug */,
@@ -398,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00CD6F4C2637C07B001176E8 /* Build configuration list for PBXNativeTarget "Recipe List App" */ = {
+		00CD6F4C2637C07B001176E8 /* Build configuration list for PBXNativeTarget "Recipe App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00CD6F4D2637C07B001176E8 /* Debug */,
