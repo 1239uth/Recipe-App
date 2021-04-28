@@ -35,7 +35,7 @@ struct RecipeFeaturedView: View {
                             }, label: {
                                 ZStack {
                                     Rectangle()
-                                        .foregroundColor(.white)
+                                        .colorInvert()
                                     
                                     VStack(spacing: 0) {
                                         Image(model.recipes[index].image)
@@ -45,6 +45,7 @@ struct RecipeFeaturedView: View {
                                         Text(model.recipes[index].name)
                                             .padding(5)
                                             .font(Font.custom("Avenir", size: 16))
+                                            .foregroundColor(Color.init(.label))
                                     }
                                 }
                             })
@@ -55,7 +56,7 @@ struct RecipeFeaturedView: View {
                             .buttonStyle(PlainButtonStyle())
                             .frame(width: geo.size.width-40, height: geo.size.height-100)
                             .cornerRadius(15)
-                            .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 10, x: -1, y: 5)
+                            .shadow(color: Color(.label), radius: 10, x: -1, y: 2)
                             
                         }
                     }
@@ -73,6 +74,7 @@ struct RecipeFeaturedView: View {
                     .font(Font.custom("Avenir Heavy", size: 16))
                 RecipeHighlights(highlights: model.recipes[tabSelectionIndex].highlights)
             }
+            .foregroundColor(Color.init(.label))
             .padding([.leading, .bottom])
         }
         .onAppear(perform: {
@@ -92,5 +94,6 @@ struct RecipeFeaturedView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeFeaturedView()
             .environmentObject(RecipeModel())
+            .colorScheme(.dark)
     }
 }

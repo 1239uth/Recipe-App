@@ -35,7 +35,7 @@ struct RecipeListView: View {
                                             .frame(width: 50, height: 50)
                                             .clipped()
                                             .cornerRadius(5)
-                                            .shadow(color: Color.init(.label), radius: 3)
+                                            .shadow(color: Color(.label), radius: 3)
                                         VStack (alignment: .leading){
                                             Text(recipe.name)
                                                 .font(Font.custom("Avenir Heavy", size: 16))
